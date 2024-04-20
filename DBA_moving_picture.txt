@@ -1,0 +1,28 @@
+create table moving_picture.ID_filmes (
+	ID int not null Auto_increment,
+    Id_do_filme int,
+    Data_insersão datetime,
+    primary key (ID)
+);
+
+Create table moving_picture.Integ_Filmes(
+	Id_do_filme int not null,
+    Id_do_imdb int,
+    Nome_do_filme varchar(255),
+    rating float,
+    ano_lancamento int,
+    url_image varchar(255),
+    genero varchar(255),
+    Elenco varchar(255),
+    diretor varchar(255),
+    awards varchar(255),
+    Data_insersão datetime
+);
+
+create table moving_picture.Integ_premios(
+	id_do_imdb int not null,
+    diretor varchar(255),
+    elenco varchar(255),
+    awards varchar(255),
+	Data_insersão datetime
+)
